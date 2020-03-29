@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "waluta": "dolar",
+        "cena": 4.08,
+        "symbol": "$",
+        "selected": 1
+        
+    },
+    {
+        "id": 2,
+        "waluta": "euro",
+        "cena": 4.08,
+        "symbol": "€"
+        
+    }
+]
