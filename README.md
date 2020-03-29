@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PREVIEW: [https://precho.github.io/Kantor/](https://precho.github.io/Kantor/)
 
 ## Available Scripts
 
