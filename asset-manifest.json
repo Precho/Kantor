@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Kantor/static/css/main.2c917a5f.chunk.css",
+    "main.js": "/Kantor/static/js/main.bfebd682.chunk.js",
+    "main.js.map": "/Kantor/static/js/main.bfebd682.chunk.js.map",
+    "runtime-main.js": "/Kantor/static/js/runtime-main.f407664b.js",
+    "runtime-main.js.map": "/Kantor/static/js/runtime-main.f407664b.js.map",
+    "static/js/2.eafee64e.chunk.js": "/Kantor/static/js/2.eafee64e.chunk.js",
+    "static/js/2.eafee64e.chunk.js.map": "/Kantor/static/js/2.eafee64e.chunk.js.map",
+    "index.html": "/Kantor/index.html",
+    "precache-manifest.34b69adb3f5833a9246a4292275bec53.js": "/Kantor/precache-manifest.34b69adb3f5833a9246a4292275bec53.js",
+    "service-worker.js": "/Kantor/service-worker.js",
+    "static/css/main.2c917a5f.chunk.css.map": "/Kantor/static/css/main.2c917a5f.chunk.css.map",
+    "static/js/2.eafee64e.chunk.js.LICENSE.txt": "/Kantor/static/js/2.eafee64e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f407664b.js",
+    "static/js/2.eafee64e.chunk.js",
+    "static/css/main.2c917a5f.chunk.css",
+    "static/js/main.bfebd682.chunk.js"
+  ]
+}
