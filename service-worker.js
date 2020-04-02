@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Kantor/precache-manifest.34b69adb3f5833a9246a4292275bec53.js"
+  "/Kantor/precache-manifest.65d7a85e2db60b15679b1a1d05950a2e.js"
 );
 
 self.addEventListener('message', (event) => {
