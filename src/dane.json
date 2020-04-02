@@ -2,7 +2,7 @@
     {
         "id": 1,
         "waluta": "dolar",
-        "cena": 4.08,
+        "cena": 3.82,
         "symbol": "$",
         "selected": 1
         
@@ -10,8 +10,15 @@
     {
         "id": 2,
         "waluta": "euro",
-        "cena": 4.08,
+        "cena": 4.55,
         "symbol": "€"
+        
+    },
+    {
+        "id": 3,
+        "waluta": "funt",
+        "cena": 5.42,
+        "symbol": "#"
         
     }
 ]
