@@ -33,7 +33,7 @@ useEffect(()=> {
 
         evt.preventDefault();
         if (wartoscInput == 0) {
-            alert("Uzupełnij CENE! / Insert PRICE!")
+            alert("Uzupełnij CENE! / Insert PRICEE!")
                 console.log("Set input price")
         } else {
             setWartosc(wartoscInput*selectedValue);
@@ -58,7 +58,7 @@ useEffect(()=> {
         <input type="submit" value="Oblicz"/>
     </form>
     <h3>{wartosc.toFixed(2)}</h3>
-    <h2>Kurs wynosi: {selectedValue.toFixed(2)}</h2>
+    <h2>Kurs wynosi: {selectedValue}</h2>
     </div>
   );
 }
