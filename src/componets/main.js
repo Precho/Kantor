@@ -23,6 +23,7 @@ useEffect(()=> {
     //setWartoscInput(evt.target.value);
    // console.log(selectedValue.cena);
     //var wartosc_input(evt.target.value);
+    //
     }
 
     const zmianaInput = (evt)=> {
