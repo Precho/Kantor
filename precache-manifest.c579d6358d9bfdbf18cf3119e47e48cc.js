@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ca5a0db7895b2b66dacc7bca379810d",
+    "revision": "217cb34d699ac2556ceee357c843aa67",
     "url": "/Kantor/index.html"
   },
   {
-    "revision": "7dcc18b3f0f066c9e168",
+    "revision": "3f71da1e69d73297b583",
     "url": "/Kantor/static/css/main.041faba4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Kantor/static/js/2.eafee64e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7dcc18b3f0f066c9e168",
-    "url": "/Kantor/static/js/main.14e88b82.chunk.js"
+    "revision": "3f71da1e69d73297b583",
+    "url": "/Kantor/static/js/main.e0c064cc.chunk.js"
   },
   {
     "revision": "eb656ebf64211364c603",
