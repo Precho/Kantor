@@ -6,24 +6,27 @@ function Main() {
     
     const [wartosc,setWartosc]=useState(0)
     const [dodatki,setDodatki]=useState([]);
-    const [selectedValue,setSelectedValue]=useState(3.82); /// Set dolar price
+    const [selectedValue,setSelectedValue]=useState(3.673); // AED default price
     const [wartoscInput,setWartoscInput] = useState(0);
+    const [waluty,setWaluty]= useState([]);
+    const [newArray,setNewArray]=useState([]);
+
+    const [date,setDate]=useState(Date());
+
 useEffect(()=> {
     setDodatki(Dane);
-    
-},[])
+    fetch("https://openexchangerates.org/api/latest.json?app_id=62a0ee8d988c4da8b4a70a483f3e40d4&base=USD")
+    .then( res => res.json())
+    .then(res => setWaluty(res.rates));
+
+   setNewArray(Array.from(waluty));
+    setDate(Date());
+},[3600000]) // uppdating every one hour
 
    const zmiana = (evt)=> {
     console.log(evt.target.value);
     setSelectedValue(evt.target.value);
-   // console.log(selectedValue.cena)
-    //setSelectedValue(evt.target.value);
-   //setSelectedValue(waluta.cena);
-    // console.log(selectedValue.cena);
-    //setWartoscInput(evt.target.value);
-   // console.log(selectedValue.cena);
-    //var wartosc_input(evt.target.value);
-    //
+   
     }
 
     const zmianaInput = (evt)=> {
@@ -31,8 +34,10 @@ useEffect(()=> {
         setWartoscInput(evt.target.value);
     }
     const oblicz = (evt) => {
-
+    //console.log(waluty);
+ 
         evt.preventDefault();
+        
         if (wartoscInput == 0) {
             alert("Uzupełnij CENE! / Insert PRICEE!")
                 console.log("Set input price")
@@ -50,9 +55,9 @@ useEffect(()=> {
         <input type="text"  onChange={zmianaInput}/>
         <select onChange={zmiana}  >
             {
-                dodatki.map(waluta => {
+                Object.entries(waluty).map(([key,value]) => {
                 return (
-                <option key={waluta.id} value={waluta.cena}   selected={waluta.selected === 1 ? "selected" : null} >{waluta.waluta}</option>
+                <option value={value}    >{key}</option>
                 )})
             } 
         </select>
@@ -60,6 +65,14 @@ useEffect(()=> {
     </form>
     <h3>{wartosc.toFixed(2)}</h3>
     <h2>Kurs wynosi: {selectedValue}</h2>
+    <h4> Last price uppdate: {date.toLocaleString()}</h4>
+{
+//   Object.entries(waluty).map(([key,value])=>{
+//     return (
+//         <div>{key} : {value.toString()}</div>
+//     );
+//   })
+}
     </div>
   );
 }
